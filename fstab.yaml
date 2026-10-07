@@ -1,4 +1,11 @@
 mountpoints:
+  /blog:
+    url: "https://author-p152232-e1579634.adobeaemcloud.com/bin/franklin.delivery/kradhakrish/tennis-com-au/main"
+    type: "markup"
+    suffix: ".html"
+    overlay:
+      url: "https://json2html.adobeaem.workers.dev/kradhakrish/tennis-com-au/main"
+      type: "markup"
   /:
     url: "https://author-p152232-e1579634.adobeaemcloud.com/bin/franklin.delivery/kradhakrish/tennis-com-au/main"
     type: "markup"
