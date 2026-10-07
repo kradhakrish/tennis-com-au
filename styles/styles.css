@@ -316,6 +316,15 @@ main > .section:first-of-type {
   }
 }
 
+/* blog article template */
+.blog-article main > .section > .default-content-wrapper {
+  max-width: 760px;
+}
+
+.blog-article main > .section > .default-content-wrapper p {
+  line-height: 1.7;
+}
+
 /* section metadata */
 main .section.light,
 main .section.highlight {

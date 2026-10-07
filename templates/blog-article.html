@@ -1,18 +1,47 @@
-<main>
-  <section>
-    <p><a href="/">Home</a> / <a href="/blog">Blog</a></p>
-    <h1>{{data.articleById.item.title}}</h1>
-    {{{data.articleById.item.subTitle.html}}}
-    <p><strong>Published:</strong> {{data.articleById.item.pubdate}}</p>
-  </section>
-
-  <section>
-    <article>
-      {{{data.articleById.item.body.html}}}
-    </article>
-  </section>
-
-  <section>
-    <p><a href="/blog">Back to all blog articles</a></p>
-  </section>
-</main>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{data.articleById.item.title}} | Tennis Australia</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      {{#data.articleById.item}}
+      <div>
+        <div class="article-header">
+          <div>
+            <div>
+              <p><a href="/">Home</a></p>
+            </div>
+            <div>
+              <p><a href="/blog">Blog</a></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1>{{title}}</h1>
+              {{{subTitle.html}}}
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>{{pubdate}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        {{{body.html}}}
+        <p><em><a href="/blog">Back to all articles</a></em></p>
+        <div class="metadata">
+          <div>
+            <div><p>template</p></div>
+            <div><p>blog-article</p></div>
+          </div>
+        </div>
+      </div>
+      {{/data.articleById.item}}
+    </main>
+    <footer></footer>
+  </body>
+</html>
