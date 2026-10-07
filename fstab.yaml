@@ -1,5 +1,5 @@
 mountpoints:
-  /blog:
+  /blog/:
     url: "https://author-p152232-e1579634.adobeaemcloud.com/bin/franklin.delivery/kradhakrish/tennis-com-au/main"
     type: "markup"
     suffix: ".html"
