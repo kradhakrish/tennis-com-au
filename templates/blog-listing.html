@@ -1,0 +1,24 @@
+<main>
+  <section>
+    <p><a href="/">Home</a> / Blog</p>
+    <h1>Tennis Australia Blog</h1>
+    <p>Latest stories, tips and updates from Tennis Australia.</p>
+  </section>
+
+  <section>
+    <div class="blog-listing">
+      <ul>
+        {{#data.articleList.items}}
+        <li>
+          <article>
+            <h2><a href="/blog/{{_id}}">{{title}}</a></h2>
+            <p><strong>Published:</strong> {{pubdate}}</p>
+            {{{subTitle.html}}}
+            <p><a href="/blog/{{_id}}">Read full article</a></p>
+          </article>
+        </li>
+        {{/data.articleList.items}}
+      </ul>
+    </div>
+  </section>
+</main>

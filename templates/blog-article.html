@@ -1,0 +1,18 @@
+<main>
+  <section>
+    <p><a href="/">Home</a> / <a href="/blog">Blog</a></p>
+    <h1>{{data.articleById.item.title}}</h1>
+    {{{data.articleById.item.subTitle.html}}}
+    <p><strong>Published:</strong> {{data.articleById.item.pubdate}}</p>
+  </section>
+
+  <section>
+    <article>
+      {{{data.articleById.item.body.html}}}
+    </article>
+  </section>
+
+  <section>
+    <p><a href="/blog">Back to all blog articles</a></p>
+  </section>
+</main>

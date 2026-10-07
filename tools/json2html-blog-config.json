@@ -1,0 +1,13 @@
+[
+  {
+    "path": "/blog/",
+    "endpoint": "https://publish-p158407-e1689364.adobeaemcloud.com/graphql/execute.json/tennis-australia/article-by-id;id={{id}}",
+    "regex": "/[0-9a-fA-F-]{36}$/",
+    "template": "/templates/blog-article.html"
+  },
+  {
+    "path": "/blog",
+    "endpoint": "https://publish-p158407-e1689364.adobeaemcloud.com/graphql/execute.json/tennis-australia/article-list",
+    "template": "/templates/blog-listing.html"
+  }
+]
