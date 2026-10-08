@@ -7,3 +7,4 @@ package-lock.json
 test/*
 _*
 tools/json2html/
+tools/bc-api/
